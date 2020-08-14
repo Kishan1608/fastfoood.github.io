@@ -1,0 +1,232 @@
+<html>
+	<head>
+	<title>FastFoods</title>
+		<link rel="icon" href="brand-logo.png" type="image">
+		<!-- CSS only -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		
+		
+		<!-- JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.v1{
+			border-left: 3px solid grey;
+			height: 60px;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 250px;
+			background-color: white;
+		}
+		li a{
+			display: block;
+			color: #ff1a1a;
+			padding: 16px 16px;
+			text-decoration: none;
+		}
+		
+		li a:hover{
+			background-color: #ff1a1a;
+			color: white;
+			text-decoration: none;
+		}
+		
+	</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand navbar-light bg-light sticky-top" style="background:blue;">
+			<a class="navbar-brand" href="#">
+				<a href="fastfood.html"><img src="brand-logo.png" height="70" width="70"></a>
+			</a>
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item" >
+						<p style="font-family: cooper black; font-size:40px; color: #ff1a1a;">FastFoods</p>
+					</li>
+				</ul>
+			</div>
+			<form class="form-inline" style="padding-top:18px;">
+				<input class="form-control" type="search" placeholder="Search from Menu">
+				<button class="btn btn-danger"><h6><span class="fas fa-search"></h6></button>
+			</form>&nbsp;&nbsp;&nbsp;&nbsp;
+			<div class="v1"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+			<span class="fas fa-user">&nbsp;&nbsp;
+			<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#login-page">
+				Login/Sign Up
+			</button>
+		</nav>
+		
+		<div class="modal fade" id="login-page" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Login</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<img src="modal.jpg" alt="pizza-boy" height="200" width="200">
+						<form>
+							<div class="form-group">
+								<label for="email-input">Email</label>
+								<input type="email" class="form-control" id="email-input">
+							</div>
+							<div class="form-group">
+								<label for="password-input">Password</label>
+								<input type="password" class="form-control" id="password-input">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-success" type="submit">Login</button>
+						<button class="btn btn-success" type="submit">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="carousel slide" id="foodcarousel" data-rise="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#foodcarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#foodcarousel" data-slide-to="1"></li>
+				<li data-target="#foodcarousel" data-slide-to="2"></li>
+				<li data-target="#foodcarousel" data-slide-to="3"></li>
+				<li data-target="#foodcarousel" data-slide-to="4"></li>
+				<li data-target="#foodcarousel" data-slide-to="5"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="carousel6.jpg" height="700" width="1600">
+				</div>
+				<div class="carousel-item">
+					<img src="carousel2.jpg" height="700" width="1600">
+				</div>
+				<div class="carousel-item">
+					<img src="carousel5.jpg" height="700" width="1600">
+				</div>
+				<div class="carousel-item">
+					<img src="carousel3.jpg" height="700" width="1600">
+				</div>
+				<div class="carousel-item">
+					<img src="carousel4.jpg" height="700" width="1600">
+				</div>
+				<div class="carousel-item">
+					<img src="carousel1.jpg" height="700" width="1600">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#foodcarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+				
+			<a class="carousel-control-next" href="#foodcarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>	
+		<br><br>
+		
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-2" >
+				<ul>
+					<li><a href="#">Trending</a></li>
+					<li><a href="Meals.html">Meals</a></li>
+					<li><a href="#">Deals</a></li>
+					<li><a href="#">Offers</a></li>
+					<li><a href="#">Family Packs</a></li>
+					<li><a href="#">Beverages</a></li>
+					<li><a href="#">Desserts</a></li>
+					<li><a href="#">Cookies and muffins</a></li>
+					<li><a href="#">Recommended Products</a></li>
+					<li><a href="#">New Launches</a></li>
+				</ul>
+			</div>
+			<div class="col-7" style="background:white;"> 
+				<div class="container" style="text-align:center;">
+					<h2 style="font-family:arial">Get delivered at doorstep</h2>
+					<img src="delivery.jpg"><br>
+					<button class="btn btn-success" data-toggle="modal" data-target="#address-page">Locate Me</button>
+					
+					<div class="modal fade" id="address-page" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Address</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="location.jpg" alt="pizza-boy" height="200" width="200">
+									<form>
+										<div class="form-group" style="text-align:left;">
+											<label for="street-input">Street</label>
+											<input type="text" class="form-control" id="street-input">
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col">
+													<label for="city-input">City</label>
+													<input type="text" class="form-control" id="city-input" placeholder="City">
+												</div>
+												<div class="col">
+													<label for="zip-code">Zipcode</label>
+													<input type="number" class="form-control" id="zip-code">
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col">
+													<input type="text" class="form-control" placeholder="State">
+												</div>
+												<div class="col">
+													<input type="text" class="form-control" placeholder="Country">
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-success" type="submit">Locate</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="col-3" style="text-align:center; padding-top:150px;">
+				<img src="cart.png">
+				<h4>Cart is empty</h4>
+			</div>
+		</div>
+		</div>
+		<br><br>
+		<div class="container-fluid" style="background:#ff1a1a; padding:60px;">
+			<a href="#" style="font-family:arial; color:white; text-decoration:none;">Disclaimer</a>
+						
+			<a href="#" style="font-family:arial; color:white; padding-left:20px; text-decoration:none;">Faq</a>
+
+			<a href="#" style="font-family:arial; color:white; padding-left:20px; text-decoration:none;">Privacy policy</a>
+						
+			<a href="#" style="font-family:arial; color:white; padding-left:20px; text-decoration:none;">Feedback</a>
+												
+			<a href="#" style="font-family:arial; color:white; padding-left:20px; text-decoration:none;">Terms & Conditions</a>
+			
+			<a style="padding-left:350px; color:white; font-size:20px;">Download the app</a>&nbsp;&nbsp;<i class="fa fa-mobile-phone" style="font-size:40px;"></i><br>
+			<a href="#"><img src="googleplay.png" style="padding-left:860px;"></a>
+			<a href="#"><img src="app-store-badge.png" height="135" width="160"></a>
+			
+		</div>
+	</body>
+</html>
